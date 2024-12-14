@@ -25,9 +25,7 @@ const Admin = () => {
 
     try {
       await axios.post(`https://qr-code-menu-system-backend.onrender.com/menu/new`, menuItem);
-      alert("Menu item added!");
     } catch (err) {
-      alert("not added");
       console.error(err);
     }
   };
