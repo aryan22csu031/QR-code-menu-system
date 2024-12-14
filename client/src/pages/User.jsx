@@ -5,7 +5,7 @@ const User = () => {
   const [src, setSrc] = useState("");
   useEffect(() => {
     setSrc(
-      "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://localhost:3000/menu"
+      "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://qr-code-menu-system-backend.onrender.com/menu"
     );
   }, [src]);
 

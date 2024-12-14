@@ -5,7 +5,7 @@ const MenuItems = () => {
   const [menu, setMenu] = useState([]);
   const fetchMenu = async () => {
     try {
-      const res = await fetch("http://localhost:3000/menu");
+      const res = await fetch("https://qr-code-menu-system-backend.onrender.com/menu");
       const data = await res.json();
       console.log(data.data);
       setMenu(data.data);
